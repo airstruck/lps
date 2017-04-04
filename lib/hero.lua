@@ -339,14 +339,11 @@ local function WheelJoint (t, bodyMap, jointMap)
         t.axis[1], t.axis[2],
         t.collideConnected)
 
-    joint:setLowerLimit(t.lowerLimit)
     joint:setMaxMotorTorque(t.maxMotorTorque)
     joint:setMotorEnabled(t.motorEnabled)
     joint:setMotorSpeed(t.motorSpeed)
-    joint:setUpperLimit(t.upperLimit)
     joint:setSpringDampingRatio(t.springDampingRatio)
     joint:setSpringFrequency(t.springFrequency)
-    joint:setLimitsEnabled(t.limitsEnabled)
     
     return joint
 end
